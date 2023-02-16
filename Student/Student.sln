@@ -65,6 +65,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeacherManagement.Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0_Framework", "0_Framework\0_Framework.csproj", "{877BC98A-0DF0-460D-8820-F9AF99B707F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student.Test.Tools", "Student.Test.Tools\Student.Test.Tools.csproj", "{143CFCF9-F185-4F56-B641-0686D3E5603E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{877BC98A-0DF0-460D-8820-F9AF99B707F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877BC98A-0DF0-460D-8820-F9AF99B707F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877BC98A-0DF0-460D-8820-F9AF99B707F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143CFCF9-F185-4F56-B641-0686D3E5603E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143CFCF9-F185-4F56-B641-0686D3E5603E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143CFCF9-F185-4F56-B641-0686D3E5603E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143CFCF9-F185-4F56-B641-0686D3E5603E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -176,5 +182,8 @@ Global
 		{A780DFE7-AF13-42D6-AF5B-B99DFC911096} = {BEBE231F-F517-4C9E-B9F0-512F4C794D0F}
 		{03EF7A64-DAF5-4540-AB10-3280FF800C14} = {4FC841B7-B92C-4B6E-A1C8-60560F3169CC}
 		{58AE8312-4947-4FEF-B378-A4CBA7270DDC} = {4FC841B7-B92C-4B6E-A1C8-60560F3169CC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AACF07FD-E650-412F-9247-431A42D633DB}
 	EndGlobalSection
 EndGlobal
