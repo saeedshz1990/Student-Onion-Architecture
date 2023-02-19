@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChooseCourseManagement.Application.Contracts\ChooseCourseManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\ChooseCourseManagement.Domain\ChooseCourseManagement.Domain.csproj" />
+    <ProjectReference Include="..\CourseManagement.Domain\CourseManagement.Domain.csproj" />
+    <ProjectReference Include="..\StudentManagement.Domain\StudentManagement.Domain.csproj" />
+    <ProjectReference Include="..\TeacherManagement.Domain\TeacherManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

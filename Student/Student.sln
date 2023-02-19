@@ -63,9 +63,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeacherManagement.Configura
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeacherManagement.Infrastructure.EFCore", "TeacherManagement.Infrastructure.EFCore\TeacherManagement.Infrastructure.EFCore.csproj", "{58AE8312-4947-4FEF-B378-A4CBA7270DDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0_Framework", "0_Framework\0_Framework.csproj", "{877BC98A-0DF0-460D-8820-F9AF99B707F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0_Framework", "0_Framework\0_Framework.csproj", "{877BC98A-0DF0-460D-8820-F9AF99B707F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student.Test.Tools", "Student.Test.Tools\Student.Test.Tools.csproj", "{143CFCF9-F185-4F56-B641-0686D3E5603E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student.Test.Tools", "Student.Test.Tools\Student.Test.Tools.csproj", "{143CFCF9-F185-4F56-B641-0686D3E5603E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChooseCourseManagement", "ChooseCourseManagement", "{2A763AC9-D584-4F2A-9995-0AED31498880}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCM.Application", "CCM.Application", "{48A17898-A199-42E7-BB56-A8690EA42CF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCM.Domain", "CCM.Domain", "{6F45F522-7071-4CEF-B25D-03D5E0372324}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCM.Infrastructure", "CCM.Infrastructure", "{9AF31720-3F8C-4055-8F49-A746BDD6EB21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseCourseManagement.Application", "ChooseCourseManagement.Application\ChooseCourseManagement.Application.csproj", "{DFEFD3E5-3C46-493F-8928-7783CB5309E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseCourseManagement.Application.Contracts", "ChooseCourseManagement.Application.Contracts\ChooseCourseManagement.Application.Contracts.csproj", "{B07B1192-0DE4-48D5-BCE9-0F30FC115459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseCourseManagement.Domain", "ChooseCourseManagement.Domain\ChooseCourseManagement.Domain.csproj", "{AE090E75-F416-4064-B76C-D95ED1C1E94B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseCourseManagement.Configurations", "ChooseCourseManagement.Configurations\ChooseCourseManagement.Configurations.csproj", "{DB557DF2-0216-48B7-A3D2-DBC0E415E69A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChooseCourseManagement.Infrastructure.EFCore", "ChooseCourseManagement.Infrastructure.EFCore\ChooseCourseManagement.Infrastructure.EFCore.csproj", "{FF4A41CE-51DF-46A0-94D2-AD96617CF230}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +171,26 @@ Global
 		{143CFCF9-F185-4F56-B641-0686D3E5603E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143CFCF9-F185-4F56-B641-0686D3E5603E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143CFCF9-F185-4F56-B641-0686D3E5603E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEFD3E5-3C46-493F-8928-7783CB5309E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEFD3E5-3C46-493F-8928-7783CB5309E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEFD3E5-3C46-493F-8928-7783CB5309E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEFD3E5-3C46-493F-8928-7783CB5309E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07B1192-0DE4-48D5-BCE9-0F30FC115459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07B1192-0DE4-48D5-BCE9-0F30FC115459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07B1192-0DE4-48D5-BCE9-0F30FC115459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07B1192-0DE4-48D5-BCE9-0F30FC115459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE090E75-F416-4064-B76C-D95ED1C1E94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE090E75-F416-4064-B76C-D95ED1C1E94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE090E75-F416-4064-B76C-D95ED1C1E94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE090E75-F416-4064-B76C-D95ED1C1E94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB557DF2-0216-48B7-A3D2-DBC0E415E69A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB557DF2-0216-48B7-A3D2-DBC0E415E69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB557DF2-0216-48B7-A3D2-DBC0E415E69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB557DF2-0216-48B7-A3D2-DBC0E415E69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4A41CE-51DF-46A0-94D2-AD96617CF230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4A41CE-51DF-46A0-94D2-AD96617CF230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4A41CE-51DF-46A0-94D2-AD96617CF230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4A41CE-51DF-46A0-94D2-AD96617CF230}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +220,14 @@ Global
 		{A780DFE7-AF13-42D6-AF5B-B99DFC911096} = {BEBE231F-F517-4C9E-B9F0-512F4C794D0F}
 		{03EF7A64-DAF5-4540-AB10-3280FF800C14} = {4FC841B7-B92C-4B6E-A1C8-60560F3169CC}
 		{58AE8312-4947-4FEF-B378-A4CBA7270DDC} = {4FC841B7-B92C-4B6E-A1C8-60560F3169CC}
+		{48A17898-A199-42E7-BB56-A8690EA42CF7} = {2A763AC9-D584-4F2A-9995-0AED31498880}
+		{6F45F522-7071-4CEF-B25D-03D5E0372324} = {2A763AC9-D584-4F2A-9995-0AED31498880}
+		{9AF31720-3F8C-4055-8F49-A746BDD6EB21} = {2A763AC9-D584-4F2A-9995-0AED31498880}
+		{DFEFD3E5-3C46-493F-8928-7783CB5309E5} = {48A17898-A199-42E7-BB56-A8690EA42CF7}
+		{B07B1192-0DE4-48D5-BCE9-0F30FC115459} = {48A17898-A199-42E7-BB56-A8690EA42CF7}
+		{AE090E75-F416-4064-B76C-D95ED1C1E94B} = {6F45F522-7071-4CEF-B25D-03D5E0372324}
+		{DB557DF2-0216-48B7-A3D2-DBC0E415E69A} = {9AF31720-3F8C-4055-8F49-A746BDD6EB21}
+		{FF4A41CE-51DF-46A0-94D2-AD96617CF230} = {9AF31720-3F8C-4055-8F49-A746BDD6EB21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AACF07FD-E650-412F-9247-431A42D633DB}

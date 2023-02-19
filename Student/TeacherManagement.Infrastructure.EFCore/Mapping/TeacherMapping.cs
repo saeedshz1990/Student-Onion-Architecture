@@ -17,6 +17,14 @@ namespace TeacherManagement.Infrastructure.EFCore.Mapping
             builder.HasKey(x => x.CreationDate);
             builder.HasKey(x => x.MobilePhone);
             builder.HasKey(x => x.NationalNumber);
+
+            builder.HasMany(_ => _.Courses)
+                    .WithOne()
+                    .HasForeignKey(x => x.TeacherId);
+            builder.HasMany(_ => _.Students)
+                    .WithOne()
+                    .HasForeignKey(x => x.TeacherId);
+
         }
     }
 }

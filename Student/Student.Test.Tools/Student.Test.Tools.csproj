@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ChooseCourseManagement.Application.Contracts\ChooseCourseManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\ChooseCourseManagement.Application\ChooseCourseManagement.Application.csproj" />
+    <ProjectReference Include="..\ChooseCourseManagement.Domain\ChooseCourseManagement.Domain.csproj" />
+    <ProjectReference Include="..\ChooseCourseManagement.Infrastructure.EFCore\ChooseCourseManagement.Infrastructure.EFCore.csproj" />
     <ProjectReference Include="..\CourseManagement.Application.Contracts\CourseManagement.Application.Contracts.csproj" />
     <ProjectReference Include="..\CourseManagement.Application\CourseManagement.Application.csproj" />
     <ProjectReference Include="..\CourseManagement.Domain\CourseManagement.Domain.csproj" />

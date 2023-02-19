@@ -8,5 +8,6 @@ namespace StudentManagement.Domain.StudentAgg
         IList<GetStudentDto> GetAll();
         GetStudentByIdDto GetById(int id);
         void Update(UpdateStudentDto dto);
+        void Delete(int id);
     }
 }

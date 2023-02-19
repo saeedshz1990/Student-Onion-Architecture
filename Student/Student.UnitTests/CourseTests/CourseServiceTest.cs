@@ -130,11 +130,11 @@ public class CourseServiceTest
         var firstDummy = new CourseDtoBuilder()
             .WithName("dummy")
             .Build();
-        _context.Manipulate(_ => _.Add(firstDummy));
+        _context.SaveChanges();
         var secondDummy = new CourseDtoBuilder()
             .WithName("new dummy")
             .Build();
-        _context.Manipulate(_ => _.Add(secondDummy));
+        _context.SaveChanges();
 
         _sut.GetById(secondDummy.Id);
 

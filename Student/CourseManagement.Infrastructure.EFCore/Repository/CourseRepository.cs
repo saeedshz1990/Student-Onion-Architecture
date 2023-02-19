@@ -13,6 +13,11 @@ namespace CourseManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
+        public void Delete(int id)
+        {
+            _context.Remove(id);
+        }
+
         public IList<GetCourseDto> GetAll()
         {
             return _context.Course.Select(_ => new GetCourseDto

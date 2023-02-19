@@ -8,5 +8,6 @@ namespace TeacherManagement.Domain.TeacherAgg
         IList<GetTeacherDto> GetAll();
         GetTeacherByIdDto GetById(int id);
         void Update(UpdateTeacherDto dto);
+        void Delete(int id);
     }
 }

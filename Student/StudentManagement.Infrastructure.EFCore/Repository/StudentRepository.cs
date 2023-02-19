@@ -14,6 +14,11 @@ namespace StudentManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
+        public void Delete(int id)
+        {
+            _context.Remove(id);
+        }
+
         public IList<GetStudentDto> GetAll()
         {
             return _context.Student

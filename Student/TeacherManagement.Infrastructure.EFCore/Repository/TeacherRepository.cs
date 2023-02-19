@@ -14,6 +14,11 @@ namespace TeacherManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
+        public void Delete(int id)
+        {
+            _context.Remove(id);
+        }
+
         public IList<GetTeacherDto> GetAll()
         {
             return _context.Teacher

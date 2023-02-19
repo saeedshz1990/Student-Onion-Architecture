@@ -8,5 +8,6 @@ namespace CourseManagement.Domain.CourseAgg
         IList<GetCourseDto> GetAll();
         GetCourseByIdDto GetById(int id);
         void Update(UpdateCourseDto dto);
+        void Delete(int id);
     }
 }

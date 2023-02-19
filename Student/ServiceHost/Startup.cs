@@ -1,3 +1,4 @@
+using ChooseCourseManagement.Configurations;
 using CourseManagement.Configurations;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using StudentManagement.Configurations;
@@ -20,10 +21,11 @@ namespace ServiceHost
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpContextAccessor();
-            var connectionString = Configuration.GetConnectionString("Students");
+            var connectionString = Configuration.GetConnectionString("StudentDB");
             CourseManagementBootstrapper.Configure(services, connectionString);
             StudentManagementBootstrapper.Configure(services, connectionString);
             TeacherManagementBootstrapper.Configure(services, connectionString);
+            ChooseCourseManagementBootstrapper.Configure(services, connectionString);
 
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using CourseManagement.Infrastructure.EFCore;
+using Xunit;
 
 namespace Student.Specs.Infrastructure;
 
@@ -15,5 +16,10 @@ public class EFDataContextDatabaseFixture : DatabaseFixture
     public EFDataContext CreateDataContext()
     {
         return new EFDataContext(_configuration.Value.DbConnectionString);
+    }
+
+    public CourseManagementContext CreateDataContext1()
+    {
+        return new CourseManagementContext(_configuration.Value.DbConnectionString);
     }
 }

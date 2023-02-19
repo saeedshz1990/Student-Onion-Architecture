@@ -17,6 +17,7 @@ namespace StudentManagement.Infrastructure.EFCore.Mapping
             builder.HasKey(x => x.CreationDate);
             builder.HasKey(x => x.MobilePhone);
             builder.HasKey(x => x.NationalNumber);
+
         }
     }
 }

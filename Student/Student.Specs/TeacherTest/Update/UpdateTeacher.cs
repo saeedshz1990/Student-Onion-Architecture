@@ -1,17 +1,21 @@
 ﻿using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
+using Student.Specs.Infrastructure;
+using Student.Test.Tools.TeacherTestTools;
+using TeacherManagement.Application.Contracts.Dto;
 using Xunit;
+using Student.UnitTests;
+using TeacherManagement.Domain.TeacherAgg;
+using TeacherManagement.Infrastructure.EFCore;
+using TeacherManagement.Application.Contracts.Teacher;
 
 namespace Student.Specs.TeacherTest.Update;
 
 public class UpdateTeacher : EFDataContextDatabaseFixture
 {
-    private readonly EFDataContext _context;
-    private readonly TeacherService _sut;
-    private Class _newClass;
-    private Term _term;
+    private readonly TeacherManagementContext _context;
+    private readonly ITeacherApplication _sut;
     private Teacher _teacher;
-    private Course _course;
     private UpdateTeacherDto _dto;
 
     public UpdateTeacher(ConfigurationFixture configuration) : base(configuration)
@@ -25,19 +29,9 @@ public class UpdateTeacher : EFDataContextDatabaseFixture
                      " با کد ملی ‘2294321905’ وجود دارد.")]
     private void Given()
     {
-        _term = new TermBuilder().Build();
-        _context.Manipulate(_ => _context.Add(_term));
-        _newClass = ClassFactory.GenerateClass("101", _term.Id);
-        _context.Manipulate(_ => _context.Add(_newClass));
-        _course = new CourseDtoBuilder().WithClassId(_newClass.Id).Build();
-        _context.Manipulate(_ => _context.Add(_course));
         _teacher = new TeacherBuilder()
             .WithFirstName("آرش")
             .WithLastName("چناری")
-            .WithNationalCode("2294321905")
-            .WithDiploma("کارشناسی ارشد")
-            .WithStudy("مهندسی نرم افزار")
-            .WithCourseId(_course.Id)
             .Build();
         _context.Manipulate(_ => _.Add(_teacher));
     }
@@ -50,12 +44,9 @@ public class UpdateTeacher : EFDataContextDatabaseFixture
         _dto = new UpdateTeacherDtoBuilder()
             .WithFirstName("آرش")
             .WithLastName("چناری")
-            .WithDiploma("دکتری")
-            .WithStudy("هوش مصنوعی")
-            .WithCourseId(_course.Id)
             .Build();
 
-        await _sut.Update(_dto, _teacher.Id);
+        _sut.Update(_dto, _teacher.Id);
     }
 
     [BDDHelper.Then("تنها یک استاد با نام ‘آرش چناری’ " +
@@ -64,17 +55,14 @@ public class UpdateTeacher : EFDataContextDatabaseFixture
                     " در سیتسم وجود داشته باشد.")]
     private async Task Then()
     {
-        var actualResult = await _context.Teachers.FirstOrDefaultAsync();
+        var actualResult = await _context.Teacher.FirstOrDefaultAsync();
         actualResult!.FirstName.Should().Be(_dto.FirstName);
         actualResult.LastName.Should().Be(_dto.LastName);
-        actualResult.FatherName.Should().Be(_dto.FatherName);
-        actualResult.Diploma.Should().Be(_dto.Diploma);
-        actualResult.Study.Should().Be(_dto.Study);
-        actualResult.DateOfBirth.Should().Be(_dto.DateOfBirth);
-        actualResult.Address.Should().Be(_dto.Address);
-        actualResult.GroupOfCourse.Should().Be(_dto.GroupOfCourse);
-        actualResult.CourseId.Should().Be(_dto.CourseId);
+        actualResult.YearBirth.Should().Be(_dto.YearBirth);
+        actualResult.MobilePhone.Should().Be(_dto.MobilePhone);
+        actualResult.NationalNumber.Should().Be(_dto.NationalNumber);
     }
+
 
     [Fact]
     public void Run()

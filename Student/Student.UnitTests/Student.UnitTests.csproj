@@ -13,6 +13,11 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.14" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.14" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
         <PackageReference Include="xunit" Version="2.4.2" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -25,6 +30,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ChooseCourseManagement.Application.Contracts\ChooseCourseManagement.Application.Contracts.csproj" />
+      <ProjectReference Include="..\ChooseCourseManagement.Infrastructure.EFCore\ChooseCourseManagement.Infrastructure.EFCore.csproj" />
       <ProjectReference Include="..\Student.Test.Tools\Student.Test.Tools.csproj" />
     </ItemGroup>
 
