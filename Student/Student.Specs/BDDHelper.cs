@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using Student.Specs.Infrastructure;
+using System.Linq.Expressions;
 
 namespace Student.Specs
 {

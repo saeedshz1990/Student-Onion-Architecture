@@ -7,13 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
+		<PackageReference Include="Autofac" Version="6.5.0" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\Course\" />
-      <Folder Include="Controllers\Teacher\" />
-      <Folder Include="Controllers\Student\" />
+      <ProjectReference Include="..\CourseManagement.Application.Contracts\CourseManagement.Application.Contracts.csproj" />
+      <ProjectReference Include="..\CourseManagement.Configurations\CourseManagement.Configurations.csproj" />
+      <ProjectReference Include="..\StudentManagement.Application.Contracts\StudentManagement.Application.Contracts.csproj" />
+      <ProjectReference Include="..\StudentManagement.Configurations\StudentManagement.Configurations.csproj" />
+      <ProjectReference Include="..\TeacherManagement.Application.Contracts\TeacherManagement.Application.Contracts.csproj" />
+      <ProjectReference Include="..\TeacherManagement.Configurations\TeacherManagement.Configurations.csproj" />
     </ItemGroup>
 
 </Project>

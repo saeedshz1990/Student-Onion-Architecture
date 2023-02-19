@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\StudentManagement.Application.Contracts\StudentManagement.Application.Contracts.csproj" />
+      <ProjectReference Include="..\StudentManagement.Infrastructure.EFCore\StudentManagement.Infrastructure.EFCore.csproj" />
+    </ItemGroup>
+
 </Project>

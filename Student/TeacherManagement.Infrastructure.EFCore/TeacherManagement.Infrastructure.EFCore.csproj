@@ -15,4 +15,8 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TeacherManagement.Domain\TeacherManagement.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

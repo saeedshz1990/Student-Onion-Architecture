@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CourseManagement.Application.Contracts\CourseManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\CourseManagement.Application\CourseManagement.Application.csproj" />
+    <ProjectReference Include="..\CourseManagement.Domain\CourseManagement.Domain.csproj" />
+    <ProjectReference Include="..\CourseManagement.Infrastructure.EFCore\CourseManagement.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\StudentManagement.Application.Contracts\StudentManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\StudentManagement.Application\StudentManagement.Application.csproj" />
+    <ProjectReference Include="..\StudentManagement.Domain\StudentManagement.Domain.csproj" />
+    <ProjectReference Include="..\StudentManagement.Infrastructure.EFCore\StudentManagement.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\TeacherManagement.Application.Contracts\TeacherManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\TeacherManagement.Application\TeacherManagement.Application.csproj" />
+    <ProjectReference Include="..\TeacherManagement.Domain\TeacherManagement.Domain.csproj" />
+    <ProjectReference Include="..\TeacherManagement.Infrastructure.EFCore\TeacherManagement.Infrastructure.EFCore.csproj" />
+  </ItemGroup>
+
 </Project>
